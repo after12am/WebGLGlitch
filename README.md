@@ -8,4 +8,4 @@ This is a app using WebGL that allow you to glitch your image in realtime in you
 
 <img src="https://github.com/after12am/webgl-glitch/blob/master/screenshot2.jpg?raw=true" alt="screenshot" />
 
-Photo Credit by <a href="http://www.flickr.com/photos/svenreinhold/">SvenReinhold</a>
+Photo Credit by <a href="http://www.flickr.com/photos/svenreinhold/6911691814/in/photostream">SvenReinhold</a>
