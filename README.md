@@ -6,6 +6,6 @@ This is a app using WebGL that allow you to glitch your image in realtime in you
 
 <h1>Screenshot</h1>
 
-<img src="https://github.com/after12am/webgl-glitch/blob/master/screenshot.jpg?raw=true" alt="screenshot" style="border: 1px solid #000;" />
+<img src="https://github.com/after12am/webgl-glitch/blob/master/screenshot.jpg?raw=true" alt="screenshot" />
 
 Photo Credit by <a href="http://www.flickr.com/photos/svenreinhold/">SvenReinhold</a>
