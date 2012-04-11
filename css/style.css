@@ -157,14 +157,14 @@ header h1 a {
 }
 
 #drop-zone {
-	width: 400px;
+	width: 480px;
 	height: 100px;
 	line-height: 96px;
 	position:absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -50px;
-	margin-left: -225px;
+	margin-left: -240px;
 	padding: 25px;
 	text-align: center;
 	color: #777;
