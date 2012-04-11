@@ -76,16 +76,16 @@ function animate() {
 	{
 		var d = new Date();
 		
-		glitchParam.width = Math.cos(theta / Math.PI * 180);
+		// auto glitch
+		//glitchParam.width = Math.cos(theta / Math.PI * 180);
 		//glitchParam.height = Math.sin(theta / Math.PI * 180) * 10 + 90;
-		
 		//glitchParam.width = Math.cos(theta / Math.PI * 180) * 50 + 50;
 		//glitchParam.height = Math.sin(theta / Math.PI * 180) * 50 + 50;
 		
 		// Iterate over all controllers
-		for (var i in ui.__controllers) {
-			ui.__controllers[i].updateDisplay();
-		}
+		// for (var i in ui.__controllers) {
+		// 	ui.__controllers[i].updateDisplay();
+		// }
 		
 		setGlitchFormat(ui.__controllers[1].getValue());
 		setGlitchType(ui.__controllers[2].getValue());
