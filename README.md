@@ -2,7 +2,7 @@
 
 <h3><a href="http://after12am.github.com/webgl-glitch/">View Live Demo</a></h3>
 
-This is a app using WebGL that allow you to glitch your image in realtime in you blower.
+This is a app using WebGL that allow you to glitch your image in realtime in your blower.
 
 <h1>Screenshot</h1>
 
