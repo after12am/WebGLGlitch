@@ -1,0 +1,187 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #0d1424;
+	font: .81em/150% Arial, Helvetica, sans-serif;
+	color: #666;
+}
+a {
+	color: #026acb;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0 0 1.2em;
+	padding: 0;
+}
+
+/* list */
+ul, ol {
+	margin: 1em 0 1.4em 24px;
+	padding: 0;
+	line-height: 140%;
+}
+li {
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4em;
+	margin: 20px 0 .4em;
+	color: #000;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1em;
+}
+
+/* reset webkit search input styles */
+input[type=search] {
+	-webkit-appearance: none;
+	outline: none;
+}
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+
+body {
+	background: #F3EEE8;
+	overflow-x: hidden;
+}
+
+header {
+	/*border-top: 1px #fff solid;
+			height: 43px;*/
+	background-color: #000;
+	height: 43px;
+	padding-bottom: 2px;
+}
+
+header h1 {
+	padding: 0 20px;
+	margin: -2px;
+	
+}
+
+header h1 a:hover {
+	color: #eee;
+	text-decoration: none;
+	
+}
+
+header h1 a {
+	font-size: 0.45em;
+	font-weight: bold;
+	line-height: 43px;
+	letter-spacing: 0.18em;
+	color: #777;
+}
+
+#gui-container {
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform-origin-x: 13%;
+	-moz-transform-origin-x: 13%;
+	-webkit-transform-origin-y: 130%;
+	-moz-transform-origin-y: 130%;
+	position: absolute;
+	top: -40px;
+	z-index: 1000;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+}
+
+#canvas canvas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#drop-zone {
+	width: 400px;
+	height: 100px;
+	line-height: 96px;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -225px;
+	padding: 25px;
+	text-align: center;
+	color: #777;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	background-color: #000;
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'Terminal Dosis', sans-serif;
+	letter-spacing: .16em;
+}
+
+
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
