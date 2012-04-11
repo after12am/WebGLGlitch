@@ -55,6 +55,14 @@ function setGlitchOffset(v) {
 	glitch.offset(parseInt(v)).update();
 };
 
+function saveImage() {
+	try {
+		window.open(canvas.toDataURL("image/jpeg"));
+	} catch (e) {
+		console.log(e);
+	}
+};
+
 window.onload = function() {
 	
 	try {
@@ -82,6 +90,7 @@ window.onload = function() {
 		this.width = 100;
 		this.height = 100;
 		this.offset = 0;
+		this.saveImage = saveImage;
 	};
 	
 	var ui = new dat.GUI({ autoPlace: false, width: 320 });
@@ -95,6 +104,7 @@ window.onload = function() {
 	ui.add(param, 'width', 0, 100, .1).onChange(setGlitchWidth);
 	ui.add(param, 'height', 0, 100, .1).onChange(setGlitchHeight);
 	ui.add(param, 'offset', 0, 100, .1).onChange(setGlitchOffset);
+	ui.add(param, 'saveImage').name('save image');
 	
 	$(ui.domElement).find('input[type=text]:first').attr('readonly', 'true');
 	
