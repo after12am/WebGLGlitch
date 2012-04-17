@@ -1,5 +1,10 @@
 
-var fps = 10, theta = 0;
+var VIDEO_MAX_WIDTH = 640;
+var VIDEO_MAX_HEIGHT = 360;
+
+// glitch update frequency
+var fps = 10
+var theta = 0;
 var glitchGui, glitchParam;
 var canvas;
 var texture;
@@ -78,13 +83,30 @@ function loadVideo(src) {
 		$(video).hide();
 		
 		var videoCanvas = document.createElement('canvas');
-		videoCanvas.width = $(video).width();
-		videoCanvas.height = $(video).height();
+		
+		width = $(video).width();
+		height = $(video).height()
+		
+		if ($(video).width() > VIDEO_MAX_WIDTH) {
+			
+			width = VIDEO_MAX_WIDTH;
+			height = parseInt(height * VIDEO_MAX_WIDTH / $(video).width());
+			
+		} else if ($(video).height() > VIDEO_MAX_HEIGHT) {
+			
+			width = parseInt(width * VIDEO_MAX_HEIGHT / $(video).height());
+			height = VIDEO_MAX_HEIGHT;
+		}
+		
+		
+		videoCanvas.width = width;
+		videoCanvas.height = height;
 		
 		video.videoCanvas = videoCanvas;
 		texture = canvas.texture(video);
 		glitch = canvas.glitch(texture);
 		video.play();
+		
 	}, false);
 	
 	video.addEventListener('ended', function() {
@@ -287,19 +309,19 @@ window.onload = function() {
 	f1.add(glitchParam, 'maxWidth').min(0).max(100).step(.1).name('max');
 	f1.add(glitchParam, 'width').min(0).max(100).step(.1).onChange(setGlitchWidth);
 	f1.add(glitchParam, 'animateWidth').name('animate');
-	f1.open();
+	f1.close();
 	var f2 = glitchGui.addFolder('height');
 	f2.add(glitchParam, 'minHeight').min(0).max(100).step(.1).name('min');
 	f2.add(glitchParam, 'maxHeight').min(0).max(100).step(.1).name('max');
 	f2.add(glitchParam, 'height').min(0).max(100).step(.1).onChange(setGlitchHeight);
 	f2.add(glitchParam, 'animateHeight').name('animate');
-	f2.open();
+	f2.close();
 	var f3 = glitchGui.addFolder('offset');
 	f3.add(glitchParam, 'minOffset').min(0).max(100).step(.1).name('min');
 	f3.add(glitchParam, 'maxOffset').min(0).max(100).step(.1).name('max');
 	f3.add(glitchParam, 'offset').min(0).max(100).step(.1).onChange(setGlitchOffset);
 	f3.add(glitchParam, 'animateOffset').name('animate');
-	f3.open();
+	f3.close();
 	glitchGui.add(glitchParam, 'saveImage').name('save image');
 	
 	// set readonly attribute to gui named 'title' because title is app name.
