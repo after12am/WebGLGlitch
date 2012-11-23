@@ -15,13 +15,13 @@ If you want to know more infomation about the library called by glfx.js, visit <
 
 ### original
 
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/screenshot/sample1.jpg" />
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/doc/sample1.jpg" />
 
 Photo Credit by <a href="http://www.flickr.com/photos/svenreinhold/6911691814/in/photostream">SvenReinhold</a>
 
 ### glitched
 
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/screenshot/sample2.jpg" />
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/doc/sample2.jpg" />
 
 ## Usage
 
