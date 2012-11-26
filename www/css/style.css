@@ -157,6 +157,7 @@ header h1 a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	display: none;
 }
 
 #drop-zone {
@@ -167,7 +168,7 @@ header h1 a {
 	top: 50%;
 	left: 50%;
 	margin-top: -50px;
-	margin-left: -240px;
+	margin-left: -265px;
 	padding: 25px;
 	text-align: center;
 	color: #777;

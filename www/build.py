@@ -1,20 +1,12 @@
 #!/usr/bin/python
 
-module = 'fx'
-input_path = 'src/'
-output_path = 'www/js/vendor/glfx.js'
+input_path = 'js/app/'
+output_path = 'js/script.js'
 
-import re, os, sys, time, tempfile
+from SimpleHTTPServer import SimpleHTTPRequestHandler
+from SocketServer import TCPServer
+import re, os, sys, time, tempfile, threading
 
-header = '''/*
- * glfx.js
- * https://github.com/after12am/WebGLGlitch
- *
- * Copyright 2011 Evan Wallace
- * Copyright 2012 Satoshi Okami
- * Released under the MIT license
- */
-'''
 
 def sources():
     return [os.path.join(base, f) for base, folders, files in \
@@ -36,7 +28,7 @@ def compress_glsl(text):
     return text
 
 def build():
-    data = 'var %s = (function() {\nvar exports = {};\n\n' % module + compile(sources()) + '\nreturn exports;\n})();\n'
+    data = '(function($) {\n\n %s \n\n})(jQuery);' % compile(sources())
     if 'release' in sys.argv:
         f1, temp1_path = tempfile.mkstemp()
         f2, temp2_path = tempfile.mkstemp()
@@ -48,7 +40,7 @@ def build():
         data = open(temp2_path).read()
         os.remove(temp2_path)
         data = compress_glsl(data)
-    data = header + data
+    data = data
     open(output_path, 'w').write(data)
     print 'built %s (%u lines)' % (output_path, len(data.split('\n')))
 
