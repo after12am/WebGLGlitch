@@ -130,7 +130,7 @@ var CanvasView = Backbone.View.extend({
         if (this.filter) {
             
             // in case of video
-            if (app.VideoView.el) {
+            if (app.VideoView && app.VideoView.el) {
                 if (app.VideoView.el.videoCanvas) {
                     // in advance draw on temp canvas for getting data as URI
                     // using toDataURL methodthis.theta
