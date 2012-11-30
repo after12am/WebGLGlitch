@@ -143,7 +143,6 @@ var AppView = Backbone.View.extend({
     }
 });
 // js/app/View/CanvasView.js
-
 var CanvasView = Backbone.View.extend({
     
     texture: null,
@@ -294,7 +293,6 @@ var CanvasView = Backbone.View.extend({
             this.width(app.DatView.dat.get('width').getValue());
             this.height(app.DatView.dat.get('height').getValue());
             this.offset(app.DatView.dat.get('offset').getValue());
-            console.log(app.DatView.dat.get('offset').getValue())
             this.filter.update();
         }
         
