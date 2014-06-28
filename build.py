@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-input_path = 'js/app/'
-output_path = 'js/script.js'
+input_path = 'www/js/app/'
+output_path = 'www/js/script.js'
 
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 from SocketServer import TCPServer
