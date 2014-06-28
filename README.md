@@ -8,8 +8,8 @@ This is a web application to [glitch](http://en.wikipedia.org/wiki/Glitch) your 
 
 ### [View Live Demo](http://after12am.github.com/WebGLGlitch/)
 　
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/doc/sample1.jpg"/>
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/images/image1.jpg"/>
 
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/doc/sample2.jpg"/>
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/images/image2.jpg"/>
 
 Photo Credit by [SvenReinhold](http://www.flickr.com/photos/svenreinhold/6911691814/in/photostream)
