@@ -7,7 +7,7 @@ that runs on [openFrameworks](http://www.openframeworks.cc/) as addon. This appl
 is on basis of [glfx.js](http://evanw.github.io/glfx.js/) that is a sophisticated image effect library 
 created by [evanw](https://github.com/evanw). I developed glitch effect for this library 
 in my fork. But this effect does not be incorporated to original 
-for different design concept. So if you like it, use [this](http://after12am.github.io/glfx.js/glfx.js).
+for different design concept. So if you like this effect, use [this](http://after12am.github.io/glfx.js/glfx.js).
 
 
 ## Demo
