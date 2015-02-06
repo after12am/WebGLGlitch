@@ -29,14 +29,15 @@ $(function() {
     
     if (typeof(FileReader) == "undefined") {
         var error_message = 'Sorry, but this browser doesn\'t support FileReader.';
-        alert(error_message); throw error_message;
+        // alert(error_message);
+        throw error_message;
     }
     
     try {
         app.CanvasView = new CanvasView();
     } catch (e) {
-        var error_message = 'Sorry, but this browser doesn\'t support WebGL.';
-        alert(error_message); throw error_message;
+        // alert('Sorry, but ' + e);
+        throw 'Sorry, but ' + e;
     }
     
     app.DatView = new DatView();

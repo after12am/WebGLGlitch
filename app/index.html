@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WebGLGlitch</title>
+<!-- build:css(.tmp) styles/main.css -->
+<link rel="stylesheet" href="/styles/main.css">
+<!-- endbuild -->
+</head>
+<body>
+    <div id="gui-container"></div>
+    <div id="canvas">
+        <div id="drop-zone">DROP IMAGE / VIDEO HERE</div>
+    </div>
+</body>
+<!-- build:js(.) scripts/vendor.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<!-- bower:js -->
+<!-- endbower -->
+<script src="scripts/vendor/glfx.js"></script>
+<script src="scripts/vendor/dat.gui.min.js"></script>
+<!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/view/app.js"></script>
+<script src="scripts/view/dat.js"></script>
+<script src="scripts/view/canvas.js"></script>
+<script src="scripts/view/video.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</html>

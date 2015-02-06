@@ -45,7 +45,7 @@ var AppView = Backbone.View.extend({
         // stop propagation
         e.preventDefault();
         
-        var file = event.dataTransfer.files[0];
+        var file = e.dataTransfer.files[0];
         var fileType = file.type;
         
         // read image or video

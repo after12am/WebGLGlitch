@@ -1,0 +1,9 @@
+{
+  "name": "webglglitch",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.3"
+  }
+}
