@@ -10,9 +10,7 @@ in my fork. But this effect does not be incorporated to original
 for different design concept. So if you like this effect, use [this](http://after12am.github.io/glfx.js/glfx.js).
 
 
-## Demo
-
-### [View Live Demo](http://after12am.github.com/WebGLGlitch/)
+### [Live Demo](http://after12am.github.com/WebGLGlitch/)
 　
 <img src="https://raw.github.com/after12am/WebGLGlitch/master/capture/image1.jpg"/>
 
