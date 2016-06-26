@@ -9,7 +9,8 @@ var CanvasView = Backbone.View.extend({
         _.bindAll(this, 'init', 'render', 'format', 'type', 'width', 'height', 'offset', 'setImage', 'setVideo', 'animate', 'videoReady', 'videoEnded');
         
         // if browser doesn't support WebGL, error has thrown.
-        this.setElement(fx.canvas());
+        this.canvas = fx.canvas();
+        this.setElement(this.canvas);
     },
     
     init: function() {
@@ -90,6 +91,7 @@ var CanvasView = Backbone.View.extend({
                 .show();
             
             that.texture = that.el.texture(image);
+            that.canvas.draw(that.texture).update();
             that.filter = that.el.glitch(that.texture);
         };
         
