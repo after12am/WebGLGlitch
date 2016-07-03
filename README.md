@@ -12,9 +12,9 @@ for different design concept. So if you like this effect, use [this](http://afte
 
 ### [Live Demo](http://after12am.github.com/WebGLGlitch/)
 　
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/capture/image1.jpg"/>
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/assets/image1.jpg"/>
 
-<img src="https://raw.github.com/after12am/WebGLGlitch/master/capture/image2.jpg"/>
+<img src="https://raw.github.com/after12am/WebGLGlitch/master/assets/image2.jpg"/>
 
 Photo Credit by [SvenReinhold](http://www.flickr.com/photos/svenreinhold/6911691814/in/photostream)
 
