@@ -1,3 +1,0 @@
-[submodule "js/vendor/glfx"]
-	path = js/vendor/glfx
-	url = git@github.com:after12am/glfx.js.git
